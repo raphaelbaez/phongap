@@ -5,7 +5,11 @@
         Aplicativo movel institucional, a fim de facilitar o acesso do cliente aos servicos da Unimed-Rio e, diminuir a demanda em outros canais de atendimento.
     </description>
     <author email="support@phonegap.com" href="http://phonegap.com">
+        Daniele Goncalves
+		Ernani Junior
+		Vanessa Franca
 		Raphael Baez
+		Thiago Neto
 		Rodrigo Toledo
     </author>
     <preference name="permissions" value="none" />
@@ -31,7 +35,7 @@
     <gap:plugin name="org.apache.cordova.contacts" />
     <gap:plugin name="org.apache.cordova.device" />
     <gap:plugin name="org.apache.cordova.device-motion" />
-    <gap:plugin name="org.apache.cordova.device-orientation" value="portrait" />
+    <gap:plugin name="org.apache.cordova.device-orientation" />
     <gap:plugin name="org.apache.cordova.dialogs" />
     <gap:plugin name="org.apache.cordova.file" />
     <gap:plugin name="org.apache.cordova.file-transfer" />
@@ -68,6 +72,13 @@
     <gap:splash gap:platform="ios" height="1024" src="www/res/screen/ios/screen-ipad-portrait.png" width="768" />
     <gap:splash gap:platform="ios" height="768" src="www/res/screen/ios/screen-ipad-landscape.png" width="1024" />
     <gap:splash gap:platform="winphone" src="www/res/screen/windows-phone/screen-portrait.jpg" />
-	
+	<!-- for iOS -->
+	<feature name="SocialSharing">
+		<param name="ios-package" value="SocialSharing" />
+	</feature>
+	<!-- for Android (you will find one in res/xml) -->
+	<feature name="SocialSharing">
+		<param name="android-package" value="nl.xservices.plugins.SocialSharing" />
+	</feature>
 	<access origin="*" />
 </widget>
