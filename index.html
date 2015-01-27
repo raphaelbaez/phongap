@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>UnimedRio</title>
+		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/SocialSharing.js"></script>
+
+		<script type="text/javascript" charset="utf-8">
+			var serverName = "oshmg.unimedrio.com.br/";
+			var appName = "mobilemodule/";
+			var targetLink = "http://" + serverName + appName ;
+			
+			function onDeviceReady() {
+				window.location = targetLink;				
+			}
+		
+			function onBodyLoad() {
+				document.addEventListener("deviceready", onDeviceReady(), false);
+			}
+		</script>
+ 	</head>
+	
+	<body onload="onBodyLoad();" bgcolor="rgb(0,140,80)" >
+		<div>
+			<img src="screen.png" style="position: absolute; top: 50%; left: 40%; margin-left: -100px; margin-top: -100px; ">
+		<div>
+	</body>
+</html>
